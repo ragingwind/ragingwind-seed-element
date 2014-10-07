@@ -1,0 +1,26 @@
+{
+  "name": "ragingwind-seed-element",
+  "keywords": [
+    "seed",
+    "polymer",
+    "web-components"
+  ],
+  "main": "ragingwind-seed-element.html",
+  "dependencies": {
+    "polymer": "Polymer/polymer#^0.4.0"
+  },
+  "devDependencies": {
+    "polymer-test-tools": "Polymer/polymer-test-tools#^0.4.0"
+  },
+  "homepage": "https://github.com/ragingwind/ragingwind-seed-element",
+  "_release": "6bf575f28b",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "6bf575f28b1d28fd1bc37b4274b91f057f7cf91c"
+  },
+  "_source": "git://github.com/ragingwind/ragingwind-seed-element.git",
+  "_target": "master",
+  "_originalSource": "ragingwind/ragingwind-seed-element",
+  "_direct": true
+}
