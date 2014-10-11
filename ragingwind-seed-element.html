@@ -1,4 +1,10 @@
 <link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../core-scaffold/core-scaffold.html">
+<link rel="import" href="../core-toolbar/core-toolbar.html">
+<link rel="import" href="../core-header-panel/core-header-panel.html">
+<link rel="import" href="../core-menu/core-menu.html">
+<link rel="import" href="../core-item/core-item.html">
+<link rel="import" href="../core-iconset-svg/core-iconset-svg.html">
 
 <!--
 Element providing solution to no problem in particular.
@@ -15,13 +21,35 @@ Element providing solution to no problem in particular.
 <polymer-element name="ragingwind-seed-element" attributes="notitle author">
 
   <template>
+    <style>
+      .content {
+        padding: 20px;
+      }
+      core-item[icon="polymer"] {
+        color: #a4c639;
+      }
+    </style>
 
     <link rel="stylesheet" href="ragingwind-seed-element.css" />
 
     <h1>Hello from ragingwind-seed-element</h1>
     <h2>Yo, Yo Polymer seed element</h2>
-    <content></content>
-
+    <content>
+      <core-scaffold responsiveWidth="1024px">
+        <core-header-panel navigation flex>
+          <core-toolbar>Menu</core-toolbar>
+          <core-menu>
+            <core-item icon="home" label="Home"></core-item>
+            <core-item icon="account-box" label="Profile"></core-item>
+            <core-item icon="settings" label="Settings"></core-item>
+          </core-menu>
+        </core-header-panel>
+        <div tool>Drawer-Content App</div>
+        <div fit class="content">
+          Alo, Alo
+        </div>
+      </core-scaffold>
+    </content>
   </template>
 
   <script>
